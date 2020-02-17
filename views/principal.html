@@ -10,7 +10,53 @@
     <hr>
 
     <div class="sobre-descricao">
-    
+        <div class="sobre-missao inline">
+
+            <div class="sobre-missao-texto">
+                <h2> Missão</h2>
+                
+                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Dolore impedit similique aliquid iste recusandae ex, sequi quibusdam enim assumenda in!
+                     Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
+             </div>
+
+            <div class="sobre-missao-imagem">
+
+            </div>
+
+        </div>
+
+        <div class="sobre-visao inline">
+
+           
+
+            <div class="sobre-visao-imagem">
+
+            </div>
+
+            <div class="sobre-visao-texto">
+                <h2> Visão</h2>
+                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Dolore impedit similique aliquid iste recusandae ex, sequi quibusdam enim assumenda in!
+                     Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
+             </div>
+
+        </div>
+
+        <div class="sobre-valores inline">
+
+            <div class="sobre-valores-texto">
+                <h2> Valores</h2>
+                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Dolore impedit similique aliquid iste recusandae ex, sequi quibusdam enim assumenda in!
+                     Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
+             </div>
+
+            <div class="sobre-valores-imagem">
+
+            </div>
+
+        </div>
     </div>
 </div>
 <div #planos class="planos">
@@ -22,10 +68,10 @@
     <div class="planos-grid">
 
         <div class="grid-3 grid-amarelo">
-            <h2 class="grid-3-plano-titulo"> Plano Gold</h2>
+            <h2 class="grid-3-plano-titulo"> Plano <strong>Gold</strong></h2>
             <hr>
             <div class="grid-3-plano-descricao">
-                <h3> Acesso total a academia</h3>
+                <h3> Acesso total a academia por um ano!</h3>
                 <h3> Por apenas:</h3>
                 <div class="gd3-val inline">
                     <h2 class="gd3-valor-cifrao"> R$</h2>
@@ -36,30 +82,30 @@
             </div>
 
         </div>
-        <div class="grid-3">
-            <h2 class="grid-3-plano-titulo"> Plano Gold</h2>
+        <div class="grid-3 grid-prata">
+            <h2 class="grid-3-plano-titulo"> Plano <strong>Silver</strong></h2>
             <hr>
             <div class="grid-3-plano-descricao">
-                <h3> Acesso total a academia</h3>
+                <h3> Acesso total a academia por seis meses!</h3>
                 <h3> Por apenas:</h3>
                 <div class="gd3-val inline">
                     <h2 class="gd3-valor-cifrao"> R$</h2>
-                    <h3 class="gd3-valor-inteiro"> 230,</h3>
+                    <h3 class="gd3-valor-inteiro"> 130,</h3>
                     <h4 class="gd3-valor-decimal"> 00</h4>
                 </div>
 
             </div>
         </div>
-        <div class="grid-3">
+        <div class="grid-3 grid-bronze">
 
-            <h2 class="grid-3-plano-titulo"> Plano Gold</h2>
+            <h2 class="grid-3-plano-titulo"> Plano <strong>Bronze</strong></h2>
             <hr>
             <div class="grid-3-plano-descricao">
-                <h3> Acesso total a academia</h3>
+                <h3> Acesso a apenas a musculação por um mês! </h3>
                 <h3> Por apenas:</h3>
                 <div class="gd3-val inline">
                     <h2 class="gd3-valor-cifrao"> R$</h2>
-                    <h3 class="gd3-valor-inteiro"> 230,</h3>
+                    <h3 class="gd3-valor-inteiro"> 60,</h3>
                     <h4 class="gd3-valor-decimal"> 00</h4>
                 </div>
 
@@ -68,9 +114,38 @@
 
     </div>
 
-    <div class = "banner-alunos inline">
-        <div class="banner-alunos-grid"><h2> 1000<br><small>Alunos</small></h2></div>
-        <div class="banner-alunos-grid"><h2> 50<br><small>Unidades</small></h2></div>
-        <div class="banner-alunos-grid"><h2> 10<br><small>Estados</small></h2></div>
+</div>
+
+<div class="banner-alunos inline">
+    <div class="banner-alunos-grid">
+        <h2> 1000<br><small>Alunos</small></h2>
     </div>
+    <div class="banner-alunos-grid">
+        <h2> 50<br><small>Unidades</small></h2>
+    </div>
+    <div class="banner-alunos-grid">
+        <h2> 10<br><small>Estados</small></h2>
+    </div>
+</div>
+
+<div class="contato">
+
+    <h2>ENTRE EM CONTATO CONOSCO!</h2>
+    <hr>
+
+    <div class="contato-form">
+
+        <form id = "formulario-contato" action="#" onsubmit="return enviaForm()" method="POST">
+        <h4 class="form-label">Nome</h4> <input class = "form-campo" type="text" name="nome" required>
+        <h4 class="form-label">Email</h4><input class="form-campo" type="email" name="email" required>
+        <h4 class="form-label">Assunto</h4> <input class="form-campo-assunto" type="text" name = "assunto" required>
+        <h4 class="form-label">Mensagem</h4> <input class="form-campo-texto" type="text" name="mensagem" required>
+
+        <button class="form-button" type="submit" >Enviar</button>
+    </form>
+
+    </form>
+
+    </div>
+
 </div>

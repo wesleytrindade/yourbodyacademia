@@ -30,17 +30,38 @@
 
 }
 
+
 html,body{margin:0;padding:0;}
 .inline{display: inline-flex;}
+
+/*CONFIGURAÇÕES SCROLLBAR*/
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #fcb823; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f00; 
+  }
 
 
 /*CONFIGURAÇÕES NAVBAR*/
 
-.navbar{width: 100%; background-color: #010101; height: 50px; opacity: 0.8; display: inline-flex; position: fixed; z-index: 10;}
+.navbar{width: 100%; background-color: #010101; height: 60px; opacity: 0.8; display: inline-flex; position: fixed; z-index: 10;}
 .navbar-logo{width: 30%; height: 100%; opacity: 1; }
 .navbar-logo-container{width: 100%;height: 100%;}
 .navbar-logo-container img{max-width: 64px; max-height: 100%; margin: 0; float: left;}
-.navbar-logo-container h4{font-family: 'OpenSans-Bold'; font-size: 24px; color: white; float: left; margin-top: 7.5px;}
+.navbar-logo-container h4{font-family: 'OpenSans-Bold'; font-size: 24px; color: white; float: left; margin-top: 3%;}
+.navbar-mobile{display: none;}
 
 .navbar-menu{width: 70%;height: 100%; opacity: 1;}
 .navbar-menu-list{list-style-type:none; float: right;}
@@ -56,26 +77,74 @@ html,body{margin:0;padding:0;}
 .banner-principal h2{font-family: OpenSans-Light; font-size: 32px; color: white; position: relative; top: 33%; float: left; width: 70%; left: 23%;}
 .imagem-banner-principal{background-image:url('../img/academia-banner1.jpg'); opacity: 0.8; background-position-y: -285px; width: 100%; height: 300px; margin: 0;  z-index: -10;}
 
+/*SOBRE A ACADEMIA*/
+
+.sobre{width: 100%; height: 800px; background-color: #fefefe;}
+.sobre h2{font-family: OpenSans-Bold; font-size: 24px; color: #010101; text-align: center;}
+.sobre hr{width: 10%; text-align: center; border-top: 2px solid red;}
+.sobre-descricao{height: 80%;margin-top: 3%; background-image: url('../img/background-academia.jpg'); background-size: cover;}
+.sobre-descricao h2{font-family: OpenSans-Bold; font-size: 24px; margin-left: 2%;}
+.sobre-descricao h3{font-family: OpenSans-Light; font-size: 16px; text-align: justify; width: 80%; margin-left: 2%;}
+.sobre-missao,.sobre-visao{height: 33%; width: 100%;}
+.sobre-missao{background-color: rgba(255, 184, 35, 0.7);}
+.sobre-visao{background-color: rgba(56, 61, 145,0.7);}
+.sobre-valores{background-color: rgba(119, 221, 119,0.7);margin-top: -0.3%;height: 34%; }
+
+.sobre-missao-texto h2,.sobre-valores-texto h2,.sobre-visao-texto h2{text-align: left;}
+.sobre-missao-texto,.sobre-visao-texto,.sobre-valores-texto{width: 80%;}
+.sobre-missao-texto h2,.sobre-valores-texto h2, .sobre-visao-texto h3{color: #fefefe}
+.sobre-visao-texto h2{color: #f00;}
+
+
+
+
+.sobre-missao-imagem{width: 20%;background-image: url("../img/academia-banner2.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.sobre-visao-imagem{width: 20%;background-image: url("../img/banner-missao.jpeg"); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.sobre-valores-imagem{width: 20%;background-image: url("../img/academia-banner3.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center;}
+
 /*GRID PLANOS*/
 .planos{margin-top:40px; background-color: #fefefe; width: 100%; height: 400px;}
 .planos-titulo{height: 20%;}
 .planos-titulo h2{font-family: OpenSans-Bold; font-size: 24px; color: #010101; text-align: center;}
 .planos-titulo hr{width: 10%; text-align: center; border-top: 2px solid red;}
 .planos-grid{display: inline-flex; width: 100%; height: 80%; margin: 0;}
-.grid-3{border:1px solid black;margin-right: 2%; width: 30%; height: 90%; border-radius: 3%;}
+.grid-3{border:1px solid black;margin-left:2%;margin-right: 2%; width: 30%; height: 90%; border-radius: 3%;}
 .grid-3-plano-titulo{font-family: OpenSans; font-size: 24px; text-align: center;}
 .grid-3 hr{border: 0.5px solid #d4d8d8;}
 .grid-3-plano-descricao h3{font-family: OpenSans-Light; font-size: 18px; text-align: center;}
 .gd3-valor-cifrao{font-family: OpenSans !important; font-size: 30px !important;}
 .gd3-val{text-align: center; left: 33%; position: relative;}
-.gd3-valor-inteiro{font-family: OpenSans-Bold !important; font-size: 35px !important; font-weight: 500;}
+.gd3-valor-inteiro{font-family: OpenSans-Bold !important; font-size: 35px !important; font-weight: 500; margin-top: 22px; margin-left: 1%;}
 .gd3-valor-decimal{font-family: OpenSans-Bold !important; font-size: 20px !important; font-weight: 500;}
 .grid-amarelo{border-color: #fcb823;}
+.grid-amarelo h2 strong{color: #fcb823;}
+.grid-prata{border-color: #c0c0c0;}
+.grid-prata h2 strong{color:#c0c0c0}
+.grid-bronze{border-color: #a46628;}
+.grid-bronze h2 strong{color: #a46628}
 
 /*GRID ALUNOS*/
 
 .banner-alunos{background-color: #010101; width: 100%; height: 200px;}
-.banner-alunos-grid{width: 33%; border-right: 2px solid #d4d8d8;}
-.banner-alunos-grid:last-child{width: 33%; border: none;}
-.banner-alunos-grid h2{color: #fefefe; font-family: OpenSans-Bold; font-size: 40px; text-align: center;}
-.banner-alunos-grid h2 small{color: #fefefe; font-family: OpenSans-Light; font-size: 20px; text-align: center;}
+.banner-alunos-grid{width: 33%}
+.banner-alunos-grid h2{color: #fefefe; font-family: OpenSans-Bold; font-size: 45px; text-align: center;}
+.banner-alunos-grid h2 small{color: #fefefe; font-family: OpenSans-Light; font-size: 25px; text-align: center;}
+
+/*CONTATO*/
+
+.contato{background-color: #fefefe; width: 100%; height: 400px;}
+.contato h2{font-family: OpenSans-Bold; font-size: 24px; color: #010101; text-align: center;}
+.contato hr{width: 10%; text-align: center; border-top: 2px solid red;}
+.contato-form{width: 80%; height: 70%; position: relative; left: 4%;top:3%}
+
+/*FOOTER*/
+.footer{margin-top:3%;width: 100%; background-color: #010101; height: 300px;}
+
+/*CONFIGURAÇÕES MOBILE*/
+
+
+@media only screen and (max-width: 600px)
+{
+    .navbar-mobile{display: block;}
+    .navbar{display: none;}
+}
