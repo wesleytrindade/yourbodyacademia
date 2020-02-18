@@ -14,11 +14,11 @@
 
             <div class="sobre-missao-texto">
                 <h2> Missão</h2>
-                
-                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+
+                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Dolore impedit similique aliquid iste recusandae ex, sequi quibusdam enim assumenda in!
-                     Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
-             </div>
+                    Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
+            </div>
 
             <div class="sobre-missao-imagem">
 
@@ -28,7 +28,7 @@
 
         <div class="sobre-visao inline">
 
-           
+
 
             <div class="sobre-visao-imagem">
 
@@ -36,10 +36,10 @@
 
             <div class="sobre-visao-texto">
                 <h2> Visão</h2>
-                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Dolore impedit similique aliquid iste recusandae ex, sequi quibusdam enim assumenda in!
-                     Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
-             </div>
+                    Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
+            </div>
 
         </div>
 
@@ -47,10 +47,10 @@
 
             <div class="sobre-valores-texto">
                 <h2> Valores</h2>
-                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <h3> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Dolore impedit similique aliquid iste recusandae ex, sequi quibusdam enim assumenda in!
-                     Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
-             </div>
+                    Iste itaque sequi officia iure ullam libero eaque, laudantium impedit.</h3>
+            </div>
 
             <div class="sobre-valores-imagem">
 
@@ -135,16 +135,28 @@
 
     <div class="contato-form">
 
-        <form id = "formulario-contato" action="#" onsubmit="return enviaForm()" method="POST">
-        <h4 class="form-label">Nome</h4> <input class = "form-campo" type="text" name="nome" required>
-        <h4 class="form-label">Email</h4><input class="form-campo" type="email" name="email" required>
-        <h4 class="form-label">Assunto</h4> <input class="form-campo-assunto" type="text" name = "assunto" required>
-        <h4 class="form-label">Mensagem</h4> <input class="form-campo-texto" type="text" name="mensagem" required>
+        <form id="formulario-contato" action="#" onsubmit="return enviaForm()" method="POST">
+            <div class="sup-form inline">
+                <div class="campo-form inline">
+                    <h4 class="form-label">Nome</h4>
+                    <input class="form-campo" type="text" name="nome" required>
+                </div>
 
-        <button class="form-button" type="submit" >Enviar</button>
-    </form>
+                <div class="campo-form inline">
+                    <h4 class="form-label">Email</h4><input class="form-campo" type="email" name="email"
+                        placeholder="example@example.com" required>
 
-    </form>
+                </div>
+            </div>
+
+            <h4 class="form-label">Assunto</h4> <input class="form-campo-assunto" type="text" name="assunto" required>
+            <h4 class="form-label">Mensagem</h4> <textarea class="form-campo-texto" rows="10" name="mensagem"
+                resize="none" required> </textarea>
+
+            <button class="form-button" type="submit">Enviar</button>
+        </form>
+
+        </form>
 
     </div>
 
